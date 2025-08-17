@@ -1,0 +1,33 @@
+@import "tailwindcss";
+/* Custom scrollbar for messages */
+#messages::-webkit-scrollbar {
+  width: 8px;
+}
+#messages::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 4px;
+}
+#messages::-webkit-scrollbar-thumb {
+  background: #94a3b8;
+  border-radius: 4px;
+}
+#messages::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+details > summary {
+  transition: all 0.2s ease;
+}
+details[open] > summary {
+  background-color: #dbeafe;
+}
+/* Screen reader only class */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
